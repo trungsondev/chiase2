@@ -1,0 +1,66 @@
+﻿@using System.Data;
+@using Microsoft.AspNetCore.Mvc.ModelBinding;
+@{
+    ViewData["Title"] = "Quản lý sinh viên";
+    var list = ViewData["Data"] as DataTable;
+}
+@section HeaderSection{
+}
+
+@foreach (var modelState in ViewData.ModelState.Values) {
+    foreach (ModelError error in modelState.Errors) {
+        @error.ErrorMessage.ToString();
+    }
+}
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Mã sinh viên</th>
+            <th scope="col">Họ tên</th>
+            <th scope="col">Email</th>
+            <th scope="col">Ngày Sinh</th>
+            <th scope="col">&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < list.Rows.Count; i++)
+        {
+            <tr>
+                <th scope="row">
+                    @{
+                        var stt = i + 1;
+                    }
+                    @stt
+                </th>
+                <td>@list.Rows[i]["MaSV"]</td>
+                <td>@list.Rows[i]["HoTenSV"]</td>
+                <td>@list.Rows[i]["Email"]</td>
+                <td>
+                    @{
+                        var NgaySinhSV = "";
+                        if (list.Rows[i]["NgaySinh"] != null)
+                        {
+                            var NgaySinhText = list.Rows[i]["NgaySinh"].ToString();
+                            DateTime NgaySinh = DateTime.Parse(NgaySinhText);
+                            NgaySinhSV = NgaySinh.ToString("dd/MM/yyyy");
+
+                        }
+                    }
+                    @NgaySinhSV
+
+                </td>
+                <td>
+                    <a href="/SinhVien/Sua/@list.Rows[i]["SinhVienId"]" class="btn btn-warning btn-md">Sửa</a>
+                    <a href="/SinhVien/Xoa/@list.Rows[i]["SinhVienId"]" class="btn btn-danger btn-md">Xóa</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+
+
+@section BottomSection{
+}

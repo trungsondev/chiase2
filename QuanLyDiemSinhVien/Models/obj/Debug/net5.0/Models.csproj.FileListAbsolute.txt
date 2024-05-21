@@ -1,0 +1,15 @@
+D:\BaoCao\QuanLyDiemSinhVien\Models\bin\Debug\net5.0\Models.deps.json
+D:\BaoCao\QuanLyDiemSinhVien\Models\bin\Debug\net5.0\Models.dll
+D:\BaoCao\QuanLyDiemSinhVien\Models\bin\Debug\net5.0\ref\Models.dll
+D:\BaoCao\QuanLyDiemSinhVien\Models\bin\Debug\net5.0\Models.pdb
+D:\BaoCao\QuanLyDiemSinhVien\Models\obj\Debug\net5.0\Models.csproj.AssemblyReference.cache
+D:\BaoCao\QuanLyDiemSinhVien\Models\obj\Debug\net5.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaoCao\QuanLyDiemSinhVien\Models\obj\Debug\net5.0\Models.AssemblyInfoInputs.cache
+D:\BaoCao\QuanLyDiemSinhVien\Models\obj\Debug\net5.0\Models.AssemblyInfo.cs
+D:\BaoCao\QuanLyDiemSinhVien\Models\obj\Debug\net5.0\Models.csproj.CoreCompileInputs.cache
+D:\BaoCao\QuanLyDiemSinhVien\Models\obj\Debug\net5.0\Models.dll
+D:\BaoCao\QuanLyDiemSinhVien\Models\obj\Debug\net5.0\ref\Models.dll
+D:\BaoCao\QuanLyDiemSinhVien\Models\obj\Debug\net5.0\Models.pdb
+D:\BaoCao\QuanLyDiemSinhVien\Models\bin\Debug\net5.0\Models.runtimeconfig.json
+D:\BaoCao\QuanLyDiemSinhVien\Models\bin\Debug\net5.0\Models.runtimeconfig.dev.json
+D:\BaoCao\QuanLyDiemSinhVien\Models\obj\Debug\net5.0\Models.genruntimeconfig.cache

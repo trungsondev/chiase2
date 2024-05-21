@@ -1,0 +1,184 @@
+﻿@{
+    ViewData["Title"] = "Lớp học phần";
+    ViewData["TitlePage"] = "Quản lý lớp học phần";
+    var dataHK = ViewData["DataHocKy"] as List<Model.Models.HocKy>;
+    var dataMH = ViewData["DataMonHoc"] as List<Model.Models.MonHoc>;
+    var dataGV = ViewData["DataGiangVien"] as List<Model.Models.GiangVien>;
+}
+@section HeaderSection{
+
+
+    <link href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+}
+<style>
+    .modal-footer {
+        display: unset !important;
+    }
+
+    #Grid1 {
+        height: 100px;
+    }
+
+    .select2-selection.select2-selection--single {
+        height: 35px !important;
+    }
+</style>
+<div>
+    <div class="col-mb-12 d-flex justify-content-end">
+        <div class="">
+            <input width="200px" type="text" value="" class="form-control" placeholder="Nội dung tìm kiếm ..." id="timKiem" autocomplete="off">
+
+        </div>
+        <div>
+            <button type="button" class="ml-3 btn btn-primary btn-md" id="btnThemMoi"><i class="fa fa-plus"></i>&ensp;Thêm mới (F2)</button>
+        </div>
+
+
+
+        @*<div class="btn-group">
+                <div class="dropdown d-inline">
+                    <button class="btn btn-primary dropdown-toggle-hide-arrow  height-button-icon" type="button" id="growthReportId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="blue fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg-end w-auto">
+                        <a class="dropdown-item textsize-item" href="javascript:void(0);" id="btnPrint"><i class="text-warning fa fa-print iconsize-item"></i>&ensp; In</a>
+                        <a class="dropdown-item textsize-item" href="javascript:void(0);" id="btnExport"><i class="text-success fa fa-file-excel-o iconsize-item"></i>&ensp; Xuất Excel</a>
+                    </div>
+                </div>
+            </div>*@
+
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-12">
+        <div id="Grid1"></div>
+    </div>
+    <div class="modal modal-blur fade" id="mdThemMoi" tabindex="-1" aria-modal="true" role="dialog" data-bs-backdrop="static">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header nts-modal">
+                    <h5 class="modal-title" id="tieuDeModal"></h5>
+                    <button onclick="donglai(this)" type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"> &times;</button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="form" class="form" method="post" action="/LopHocPhan/NhanDuLieu">
+                        <div class="row">
+                            <input type="hidden" id="LopHPID" name="LopHPID" />
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label class="form-label" for="MaLopHP">Mã lớp</label>
+                                    <input name="MaLopHP" type="text" class="form-control" id="MaLopHP" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="mb-3">
+                                    <label class="form-label" for="TenLopHP">Tên lớp</label>
+                                    <input name="TenLopHP" type="text" class="form-control" id="TenLopHP" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="mb-3">
+                                    <label class="form-label" for="SoluongSv">Số lượng</label>
+                                    <input name="SoluongSv" type="number" class="form-control" id="SoluongSv">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="mb-3">
+                                    <label class="form-label" for="MonHocID">Môn học</label>
+                                    <select name="MonHocID" class="form-control" id="MonHocID" tabindex="0" required>
+                                        <option value=""></option>
+                                        @foreach (var item in dataMH)
+                                        {
+                                            <option value="@item.MonHocId">@item.TenMonHoc</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="mb-3">
+                                    <label class="form-label" for="HocKyID">Học kỳ</label>
+                                    <select name="HocKyID" class="form-control" id="HocKyID" tabindex="0" required>
+                                        <option value=""></option>
+                                        @foreach (var item in dataHK)
+                                        {
+                                            <option value="@item.HocKyId">@item.TenHocKy</option>
+                                        }
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="mb-3">
+                                    <label class="form-label" for="GiangVienID">Giảng viên</label>
+                                    <select name="GiangVienID" class="form-control" id="GiangVienID" tabindex="0" required>
+
+                                        <option value=""></option>
+                                        @foreach (var item in dataGV)
+                                        {
+                                            <option value="@item.GiangVienId">@item.HoTenGv</option>
+                                        }
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between">
+                            <div class="col-md-6" style="display: flex; align-items: center;visibility:hidden">
+                                <label style="margin-bottom: unset" class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="DangSD">
+                                    <label class="form-check-label" for="DangSD">Đang sử dụng</label>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <div style="float:right;text-align: right">
+                                    <a onclick="donglai(this)" href="#" class="btn btn-outline-danger" data-bs-dismiss="modal">
+                                        <i class="fa fa-close"></i>&nbsp;Đóng (F4)
+                                    </a>
+                                    <button type="submit" id="btnLuuVaDong" class="btn btn-success ms-auto">
+                                        <i class="fa fa-save"></i>&ensp;Lưu và đóng (F9)
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    @*<div style="display: flex; align-items: center; justify-content: space-between">
+                        <div class="col-md-6" style="display: flex; align-items: center;visibility:hidden">
+                            <label style="margin-bottom: unset" class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="DangSD">
+                                <label class="form-check-label" for="DangSD">Đang sử dụng</label>
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <div style="float:right;text-align: right">
+                                <a onclick="donglai(this)" href="#" class="btn btn-outline-danger" data-bs-dismiss="modal">
+                                    <i class="fa fa-close"></i>&nbsp;Đóng (F4)
+                                </a>
+                                <button type="submit" id="btnLuuVaDong" class="btn btn-success ms-auto">
+                                    <i class="fa fa-save"></i>&ensp;Lưu và đóng (F9)
+                                </button>
+                            </div>
+                        </div>
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section BottomSection{
+
+    <script src="/js/QuanLy/LopHocPhan.js?v=@DateTime.Now.Ticks.ToString()" defer></script>
+
+}
+
+

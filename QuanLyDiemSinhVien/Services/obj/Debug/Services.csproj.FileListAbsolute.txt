@@ -1,0 +1,6 @@
+D:\BaoCao\QuanLyDiemSinhVien\Services\bin\Debug\Services.dll
+D:\BaoCao\QuanLyDiemSinhVien\Services\bin\Debug\Services.pdb
+D:\BaoCao\QuanLyDiemSinhVien\Services\obj\Debug\Services.csproj.AssemblyReference.cache
+D:\BaoCao\QuanLyDiemSinhVien\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+D:\BaoCao\QuanLyDiemSinhVien\Services\obj\Debug\Services.dll
+D:\BaoCao\QuanLyDiemSinhVien\Services\obj\Debug\Services.pdb

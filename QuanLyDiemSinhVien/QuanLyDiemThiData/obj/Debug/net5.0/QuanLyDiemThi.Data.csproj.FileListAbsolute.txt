@@ -1,0 +1,15 @@
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\bin\Debug\net5.0\QuanLyDiemThi.Data.deps.json
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\bin\Debug\net5.0\QuanLyDiemThi.Data.dll
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\bin\Debug\net5.0\ref\QuanLyDiemThi.Data.dll
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\bin\Debug\net5.0\QuanLyDiemThi.Data.pdb
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\obj\Debug\net5.0\QuanLyDiemThi.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\obj\Debug\net5.0\QuanLyDiemThi.Data.AssemblyInfoInputs.cache
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\obj\Debug\net5.0\QuanLyDiemThi.Data.AssemblyInfo.cs
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\obj\Debug\net5.0\QuanLyDiemThi.Data.csproj.CoreCompileInputs.cache
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\obj\Debug\net5.0\QuanLyDiemThi.Data.dll
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\obj\Debug\net5.0\ref\QuanLyDiemThi.Data.dll
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\obj\Debug\net5.0\QuanLyDiemThi.Data.pdb
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\obj\Debug\net5.0\QuanLyDiemThi.Data.csproj.AssemblyReference.cache
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\bin\Debug\net5.0\QuanLyDiemThi.Data.runtimeconfig.json
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\bin\Debug\net5.0\QuanLyDiemThi.Data.runtimeconfig.dev.json
+D:\BaoCao\QuanLyDiemSinhVien\QuanLyDiemThiData\obj\Debug\net5.0\QuanLyDiemThi.Data.genruntimeconfig.cache

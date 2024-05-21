@@ -1,0 +1,335 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiAPI\\QuanLyDiemThiAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\TrungSon\\.nuget\\packages\\",
+        "outputPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TrungSon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.6.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiAPI\\QuanLyDiemThiAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiAPI\\QuanLyDiemThiAPI.csproj",
+        "projectName": "QuanLyDiemThiAPI",
+        "projectPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiAPI\\QuanLyDiemThiAPI.csproj",
+        "packagesPath": "C:\\Users\\TrungSon\\.nuget\\packages\\",
+        "outputPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TrungSon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Model\\Model.csproj": {
+                "projectPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Model\\Model.csproj"
+              },
+              "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiSinhVien\\QuanLyDiemThiSinhVien.csproj": {
+                "projectPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiSinhVien\\QuanLyDiemThiSinhVien.csproj"
+              },
+              "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Service\\Service.csproj": {
+                "projectPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Service\\Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiSinhVien\\QuanLyDiemThiSinhVien.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiSinhVien\\QuanLyDiemThiSinhVien.csproj",
+        "projectName": "QuanLyDiemThiSinhVien",
+        "projectPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiSinhVien\\QuanLyDiemThiSinhVien.csproj",
+        "packagesPath": "C:\\Users\\TrungSon\\.nuget\\packages\\",
+        "outputPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\QuanLyDiemThiSinhVien\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TrungSon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Model\\Model.csproj": {
+                "projectPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Model\\Model.csproj"
+              },
+              "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Service\\Service.csproj": {
+                "projectPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Service\\Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\TrungSon\\.nuget\\packages\\",
+        "outputPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TrungSon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Model\\Model.csproj": {
+                "projectPath": "D:\\BaiTestPhatTrienPhanMem\\QuanLyDiemSinhVien\\Model\\Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
